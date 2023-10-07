@@ -1,0 +1,52 @@
+Contents:
+
+Implementing CRUD with HTML, CSS JavaScript
+
+*************************************************************************************************************************
+
+CRUD 
+
+===>CRUD stands for 
+    
+    C-Create  (post method)
+    
+    R-Read    (get method)
+    
+    U-Update  (put method) / (patch)
+    
+    D-Delete  (delete method)
+
+===>fetch(URL) அல்லது const URL = "https://github.com/" இவ்வாறும் கொடுக்கலாம்.
+    
+===>post method
+
+    fetch(URL,{
+        method: "post",
+        body:{
+            email, brinda@gmail.com
+            password, 12345678
+        }
+    })
+
+===>get method
+
+    fetch(URL)
+
+
+===>put method                                     //patch method()
+
+    fetch(URL +"/"+id,{                            fetch(URL +"/"+id,{
+        method:"put",                                  method:"patch",
+        body:{                                         body:{
+            email,
+            password,                                        password
+        }                                                }
+    })                                                  })
+
+===>delete method
+
+    fetch(URL +"/"+id,{
+        method: "delete",
+    })
+
+*************************************************************************************************************************
